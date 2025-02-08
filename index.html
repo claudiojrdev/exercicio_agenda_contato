@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <main>
+        <div>
+            <h2>Cadastre seus Dados</h2>
+            <form id="form-dados-usuario">
+                <label>Nome</label>
+                <input type="text" id="input-nome" required placeholder="Nome">
+                <label>Telefone</label>
+                <input type="number" id="input-telefone" required placeholder="DDD+ Telefone">
+                <button type="submit">Cadastrar</button>
+                <p class="error-message"></p>
+            </form>
+        </div>
+        <div>
+            <h2>Usuários Cadastrados</h2>
+            <table cellspacing = "0">
+                <thead>
+                    <tr>
+                        <th><b>Código</b></th>
+                        <th><b>Nome</b></th>
+                        <th><b>Telefone</b></th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-usuarios">
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td  colspan="3" id="total-usuarios">Usuarios Cadastrados: 0</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <button id="btn-limpar-cadastro">Limpar Cadastro</button>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
